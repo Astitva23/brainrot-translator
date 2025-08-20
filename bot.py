@@ -1,6 +1,7 @@
 import discord
 import json
 import os
+import random
 
 # Load dictionary
 with open("dictionary.json", "r", encoding="utf-8") as f:
