@@ -38,7 +38,7 @@ async def on_message(message):
         if message.reference:  # check if it's a reply
             replied_msg = await message.channel.fetch_message(message.reference.message_id)
             result = translate_text(replied_msg.content)
-            await message.reply(f"🔎 Translation:\n{result}")
+            await message.reply(f" yea boomer:\n{result}")
         else:
             await message.reply("Please reply to a message you want translated.")
 
