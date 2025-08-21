@@ -20,6 +20,6 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "No text provided" });
   }
 
-  // ... translation logic ...
+  // ... translation logic ...fadsfaf 
 }
 
