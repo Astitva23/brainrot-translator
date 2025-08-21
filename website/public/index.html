@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brainrot Translator</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin: 50px; background: #111; color: #eee; }
+    textarea { width: 80%; height: 100px; margin: 10px; font-size: 16px; }
+    button { padding: 10px 20px; font-size: 16px; margin: 10px; cursor: pointer; }
+    .output { margin-top: 20px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1> Brainrot Translator </h1>
+  <textarea id="input" placeholder="Type your brainrot text here..."></textarea><br>
+  <button onclick="translate()">Translate</button>
+  <div class="output" id="output"></div>
+
+  <script>
+    async function translate() {
+      const input = document.getElementById("input").value;
+      const res = await fetch("/api/translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text: input })
+      });
+      const data = await res.json();
+      document.getElementById("output").innerText = data.translated || "Error translating.";
+    }
+  </script>
+</body>
+</html>
