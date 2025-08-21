@@ -2,7 +2,7 @@ import discord
 import json
 import os
 import random
-
+# random thing to commit idk ignore this
 # Load dictionary
 dict_path = os.path.join(os.path.dirname(__file__), "..", "dictionary.json")
 with open(dict_path, "r", encoding="utf-8") as f:
