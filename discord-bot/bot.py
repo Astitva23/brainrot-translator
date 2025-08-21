@@ -4,7 +4,8 @@ import os
 import random
 
 # Load dictionary
-with open("dictionary.json", "r", encoding="utf-8") as f:
+dict_path = os.path.join(os.path.dirname(__file__), "..", "dictionary.json")
+with open(dict_path, "r", encoding="utf-8") as f:
     BRAINROT_DICT = json.load(f)
 
 # Replace slang with human words
