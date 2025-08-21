@@ -12,22 +12,30 @@
   </style>
 </head>
 <body>
-  <h1> Brainrot Translator </h1>
+  <h1>🧠 Brainrot Translator 💀</h1>
+
   <textarea id="input" placeholder="Type your brainrot text here..."></textarea><br>
-  <button onclick="translate()">Translate</button>
+  <button id="translateBtn">Translate</button>
+
   <div class="output" id="output"></div>
 
   <script>
     async function translate() {
       const input = document.getElementById("input").value;
+
       const res = await fetch("/api/translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: input })
       });
+
       const data = await res.json();
-      document.getElementById("output").innerText = data.translated || "Error translating.";
+      document.getElementById("output").innerText =
+        data.translated || "Error translating.";
     }
+
+    // ✅ Attach properly once page loads
+    document.getElementById("translateBtn").addEventListener("click", translate);
   </script>
 </body>
 </html>
