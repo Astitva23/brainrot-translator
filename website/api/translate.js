@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const dictPath = path.join(process.cwd(), "..", "dictionary.json"); // go up to root
+const dictPath = path.join(process.cwd(), "dictionary.json"); // replaced ts idk figure it out yourself
 const BRAINROT_DICT = JSON.parse(fs.readFileSync(dictPath, "utf-8"));
 
 export default function handler(req, res) {
