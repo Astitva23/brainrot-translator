@@ -1,0 +1,8 @@
+modules = ["python-3.12", "python-3.8", "python-3.10", "discord.py"]
+run = " python3 bot.py"
+
+[nix]
+channel = "stable-25_05"
+
+[deployment]
+run = ["sh", "-c", "python3 bot.py"]
