@@ -44,11 +44,6 @@ pip install -r requirements.txt
 ```bash
 DISCORD_TOKEN=your_discord_bot_token_here
 ```
-
-## 4. Install Dependencies
-
-`python main.py`
-
 ---
 
 # How It Works
