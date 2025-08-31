@@ -48,20 +48,20 @@ DISCORD_TOKEN=your_discord_bot_token_here
 
 # How It Works
 
->The bot loads dictionary.json, which contains slang-to-English mappings.
+- The bot loads dictionary.json, which contains slang-to-English mappings.
 
->When a user sends a message starting with a command (like !translate), the bot translates the text using this dictionary.
+- When a user sends a message starting with a command (like !translate), the bot translates the text using this dictionary.
 
 ---
 
 # Tech Stack
->Python 3
->Discord.py (Discord bot API wrapper)
->Replit (for hosting)
->JSON (dictionary storage)
+- Python 3
+- Discord.py (Discord bot API wrapper)
+- Replit (for hosting)
+- JSON (dictionary storage)
 
 ---
 
 # Credits:
 
-> made by astitva (jhingroov)
+- made by astitva (jhingroov)
