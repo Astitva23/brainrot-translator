@@ -20,7 +20,7 @@ When you send a message, the bot replaces slang words with understandable text.
 
 Example:
 
-![Wake Bot Screenshot](./wyz.jpg)
+![translated](./wyz.jpg)
 
 
 ---
