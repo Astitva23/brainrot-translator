@@ -20,7 +20,7 @@ When you send a message, the bot replaces slang words with understandable text.
 
 Example:
 
-![translated](./wyz.jpg)
+![translated](./wyz.png)
 
 
 ---
