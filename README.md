@@ -32,14 +32,41 @@ Example:
 git clone https://github.com/yourusername/brainrot-translator.git
 cd brainrot-translator
 
-exit
+```
 
 ## 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
-
+```
 ## 3. Add your discord bot
 
 ```bash
 DISCORD_TOKEN=your_discord_bot_token_here
+```
+
+## 4. Install Dependencies
+
+`python main.py`
+
+---
+
+# How It Works
+
+>The bot loads dictionary.json, which contains slang-to-English mappings.
+
+>When a user sends a message starting with a command (like !translate), the bot translates the text using this dictionary.
+
+---
+
+# Tech Stack
+>Python 3
+>Discord.py (Discord bot API wrapper)
+>Replit (for hosting)
+>JSON (dictionary storage)
+
+---
+
+# Credits:
+
+> made by astitva (jhingroov)
