@@ -32,6 +32,8 @@ Example:
 git clone https://github.com/yourusername/brainrot-translator.git
 cd brainrot-translator
 
+exit
+
 ## 2. Install dependencies
 
 ```bash
