@@ -61,6 +61,16 @@ DISCORD_TOKEN=your_discord_bot_token_here
 - JSON (dictionary storage)
 
 ---
+# Contributing
+Contributions are welcome! Edit the Dictionary.json to add your 
+own slangs.
+
+---
+
+# License
+
+This project is licensed under the MIT License.
+You are free to modify and share it, just credit the original author.
 
 # Credits:
 
